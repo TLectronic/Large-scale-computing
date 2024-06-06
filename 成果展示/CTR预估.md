@@ -4,6 +4,10 @@ DIFM（Dual Input-aware Factorization Machine）模型是用于点击率预估�
 
 论文出处：https://www.ijcai.org/Proceedings/2020/0434.pdf
 
+数据集来源：[Click-Through Rate Prediction | Kaggle](https://www.kaggle.com/competitions/avazu-ctr-prediction/data)
+
+代码来源：[0322_deepctr_difm (kaggle.com)](https://www.kaggle.com/code/braincai/0322-deepctr-difm)
+
 ### DIFM模型特点
 
 DIFM模型的核心思想是结合了因子分解机（FM）和神经网络（NN）的优点，基本思路就是：
@@ -37,7 +41,7 @@ DIFM模型由以下组件组成：
 
 **（1）稀疏输入和嵌入层**：
 
-假定现在有一个广告点击率预测的数据集，包含各种特征比如广告的分类、广告的位置、广告的发布者等，这些特征大多是类别型的，即离散取址。嵌入层就会把这些类别型特征映射到一个低维稠密空间，以便后续模型更方便学习它们之间的关系。
+假定现在有一个广告点击率预测的数据集，包含各种特征比如广告的分类、广告的位置、广告的发布者等，这些特征大多是类别型的，即离散取值。嵌入层就会把这些类别型特征映射到一个低维稠密空间，以便后续模型更方便学习它们之间的关系。
 
 **（2）双因素Esti交配网络（Dual-FEN）层**：
 

@@ -15,7 +15,7 @@ size = comm.Get_size()
 # 设置随机种子为当前进程的编号，以确保每个进程使用不同的随机数序列
 np.random.seed(seed=rank)
 # 读取数据并进行标准化处理
-obs = whiten(np.genfromtxt('data.csv', dtype=float, delimiter=','))
+obs = whiten(np.genfromtxt('data1.csv', dtype=float, delimiter=','))
 # 希望得到3个类
 K = 3
 # K聚类尝试的次数
